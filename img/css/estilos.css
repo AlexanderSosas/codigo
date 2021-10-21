@@ -1,0 +1,63 @@
+body{
+    font-family:Helvetica;
+    background: url("../pattern-background-desktop.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor{
+    background-color: #ffffff;
+    width: 450px;
+    height: 680px;
+}
+.contenedor-texto{
+    padding: 30px;
+    text-align: center;
+}
+
+.imagen-fondo{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#boton-pagar{
+    color:#fff;
+    background-color: #382ae1;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width:100%;
+    cursor: pointer;
+
+    box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+    -webkit-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+    -moz-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+
+        }
+
+        .boton-cancelar{
+            margin-top:20px;
+            background-color: transparent;
+            border:none;
+            width:100%;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .contenedor-detalle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;            
+            background-color: rgba(56, 42, 225, 0.1);
+            border-radius: 8px;
+
+        }
+        .contenedor-detalle{
+            text-decoration: none;
+            font-size: 12px;
+        }

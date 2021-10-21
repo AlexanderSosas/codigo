@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <img src="" alt=""
+
+    
+    <!--Para crear un formulario en html existe la etiqueta FORM -->
+    <!-- action es el lugar a donde va ir la información de mi formulario -->
+    <!-- Post es un tipo de protocolo en el cual van a viajar mis datos -->
+    <!-- cuando tengamos un formulario que contenga datos sensibles este
+    debe tener el method="Post" y en caso no method="get" -->
+    <form action="" method="post">
+        <!-- Para ponerle un titulo a mi formulario debo utilizar
+        FIELDSET Y LEGEN -->
+        <fieldset>
+            <legend>Titulo de mi formulario</legend>
+            <!-- Hagamos un formulario de inciar sesión -->
+            <!-- correo, password y un boton para enviar los datos -->
+            <!-- La etiqueta que se usa para poder crear cajas es INPUT -->
+            
+            <!-- Una propiedad de los inputs son los placehotder
+            ademas los input tambien tipos:
+        email-number-date-time-color-text-password -->
+        <input 
+        name="correo"
+        placeholder="Ingrese un correo"
+        required
+        type="email"/>
+        <!-- Existe una etiqueta llamada BR: Nos da un salto de linea -->
+        <br />
+        <br />
+
+        <input 
+        name="password"
+        placeholder="Ingrese una contraseña"
+        required
+        type="password" />
+        <!-- Para hacer un boton existen varias formas por ejempplo, si quiero que
+        el boton se encargue de enviar los datos este boton debe ser de tipo *submit>
+         -->
+         <!-- Hay una etiqueta llamada button -->
+         <button type="submit">Iniciar Sessión</button>
+        <fieldset>
+
+        <h1>Formulario de registro</h1>
+            <form>
+                <fieldset>
+                    <legend>Ingresa todos tus datos</legend>
+                    <!-- Quiero -->
+                    <!-- Nombre -->
+                    <!-- Apellido -->
+                    <!-- Fecha de nacimiento -->
+                    <!-- Password -->
+                    <!-- Celular -->
+                    <!-- País -->
+                    <!-- Si esta de acuerdo con los terminos y -->
+                <!-- y condiciones
+                label: Es un texto que acompaña a nuestro input -->
+            <label for="nombre">Nombre</label>
+            <input id="nombre"
+            autocomplete="off"
+            type=text 
+            placeholder="Ingrese su nombre">
+            <br />
+            <br />
+            <label for="apellido">Apellido</label>
+            <input id="apellido"
+            type="text"
+            placeholder="Ingrese su apellido" />
+            <br />
+            <br />
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
+            <br />
+            <br />
+            <label for="correo">Correo</label>
+            <input id="correo"
+            name="email"
+            placeholder="Ingrese un correo" 
+            type="email" />
+            <br />
+            <br />            
+            <label for="password">Pasword</label>
+            <input id="password"
+            name="password"
+            placeholder="Ingrese un password"
+            type="password" />
+            <br />
+            <br />
+            <label for="celular">Celular</label>
+            <input id="celular"
+            name="celular"
+            maxlength="9"
+            placeholder="Ingrese un celular" 
+            type="number" />
+            <br />
+            <br />
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+               <option value="Peru">Perú (+51)</option>
+               <option value="Colombia">Colombia (+52)</option>
+               <option value="Venezuela">Venezuela (+53)</option>
+               <option value="Brasil">Brasil (+54)</option>
+               <option value="Argentina">Argentina (+55)</option>
+            </select>  
+            <br />
+            <br />
+            <label for="terminos" 
+            <input id="terminos" required type="checkbox" />Acepta los terminos y condiciones? />
+            </label>      
+        </fieldset>
+            </form>
+    </body>
+</html>
