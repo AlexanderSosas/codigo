@@ -1,2 +1,2 @@
 # codigo
-repositorio del curso codigo grupo 11
+repositorio del curso codigo grupo 11: actualizado.
